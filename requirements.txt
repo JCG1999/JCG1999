@@ -1,0 +1,55 @@
+# ============================================================
+# Dependencias del sistema de trading algorítmico
+# Instalar con: pip install -r requirements.txt
+# ============================================================
+
+# ---- Core científico ----
+numpy>=1.26.0
+pandas>=2.1.0
+scipy>=1.11.0
+
+# ---- Indicadores técnicos ----
+# Opción A (recomendada): pandas-ta
+# pip install pandas-ta
+# Opción B: instalar desde GitHub si PyPI falla
+# pip install git+https://github.com/twopirllc/pandas-ta.git@development
+# En entornos sin acceso PyPI completo: implementamos indicadores con numpy/pandas directamente.
+# La Fase 2 detalla qué indicadores necesitamos y cómo instalarlos.
+
+# ---- Base de datos ----
+sqlalchemy>=2.0.0
+alembic>=1.13.0          # migraciones de esquema
+
+# ---- Validación y configuración ----
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+python-dotenv>=1.0.0
+PyYAML>=6.0.1
+
+# ---- Logging estructurado ----
+loguru>=0.7.2
+
+# ---- HTTP y networking ----
+httpx>=0.26.0
+requests>=2.31.0
+
+# ---- Scheduller de tareas ----
+APScheduler>=3.10.0
+
+# ---- Datos de mercado ----
+yfinance>=0.2.36
+
+# ---- Testing ----
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.23.0
+freezegun>=1.4.0          # para tests con fechas fijas
+
+# ---- Dashboard ----
+streamlit>=1.30.0
+
+# ---- Utilidades ----
+python-dateutil>=2.8.2
+pytz>=2024.1
+tabulate>=0.9.0           # tablas en CLI
+rich>=13.7.0              # output bonito en terminal
